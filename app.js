@@ -7,6 +7,13 @@ const O_TEXT = "O";
 const X_TEXT = "X";
 let currentPlayer = O_TEXT;
 
+const player = {
+  O:0,
+  X:0
+}
+
+const p1 = document.getElementsByClassName("O");
+const p2 = document.getElementsByClassName("X");
 
 const drawBoard = () => {
   boxes.forEach((box, index) => {
@@ -29,6 +36,11 @@ const drawBoard = () => {
   });
 };
 
+updateScore = ()=>{
+    console.log(p1,p2);
+     p1[0].innerText = "Player 1 : " + player["O"];
+     p2[0].innerText = "Player 2 : " + player["X"];
+}
 function boxClicked(e) {
   const id = e.target.id;
   if (!spaces[id]) {
@@ -36,8 +48,11 @@ function boxClicked(e) {
     e.target.innerText = currentPlayer;
     if (hasPlayerWon(currentPlayer)) {
       playText.innerHTML = `${currentPlayer} wins!!`;
+      player[currentPlayer] +=1;
+      updateScore();
       return;
     }
+
     currentPlayer = currentPlayer === O_TEXT ? X_TEXT : O_TEXT;
   }
 }
@@ -79,7 +94,7 @@ const hasPlayerWon = (player) => {
       console.log(`${player} wins on the middle vertical`);
       return true;
     }
-    if (spaces[2] === player && space[6] === player) {
+    if (spaces[2] === player && spaces[6] === player) {
         console.log(`${player} wins on the right diagonal`);
         return true;
     }

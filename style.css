@@ -61,4 +61,17 @@
     cursor: pointer;
     transform: translateY(-4px);
   }
+  .O{
+    font-size: 3rem;
+     position:absolute;
+     top:50%;
+     left:10%;
+
+  }
+  .X{
+    font-size:3rem;
+    position: absolute;
+    top:50%;
+    left:75%;
+  }
   
