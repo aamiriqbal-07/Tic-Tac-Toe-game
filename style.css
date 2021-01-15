@@ -44,3 +44,18 @@ h1 {
     color: var(--seaGreen);
     background-color: blueviolet;
 }
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--seaGreen);
+    color: black;
+    border-color: black;
+    font-size: 20px;
+    transition: 200ms transform;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
