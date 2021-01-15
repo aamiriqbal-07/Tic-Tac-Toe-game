@@ -43,6 +43,7 @@ h1 {
     align-items: center;
     color: var(--seaGreen);
     background-color: blueviolet;
+    font-size: 150px;
 }
 
 button {
