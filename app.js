@@ -86,5 +86,16 @@ const hasPlayerWon = (player) => {
   }
 };
 
+restartBtn.addEventListener("click", () => {
+  spaces.forEach((space, index) => {
+    spaces[index] = null;
+  });
+  boxes.forEach((box) => {
+    box.innerText = "";
+  });
+  playText.innerHTML = `Let's Play!!`;
+
+  currentPlayer = O_TEXT;
+});
 
 drawBoard();
