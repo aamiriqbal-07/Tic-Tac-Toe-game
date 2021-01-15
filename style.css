@@ -9,3 +9,12 @@ body {
     color: var(--seaGreen);
     font-family: sans-serif;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
