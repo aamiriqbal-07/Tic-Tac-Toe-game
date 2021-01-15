@@ -1,10 +1,10 @@
 :root {
-    --purple: #32caa4;
+    --seaGreen: #32caa4;
   }
   body {
     margin: 0;
     padding: 0;
-    color: var(--purple);
+    color: var(--seaGreen);
     font-family: sans-serif;
   }
   * {
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: #e78af7; */
+    background-color: #000000;
   }
   
   #gameboard {
@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     font-size: 150px;
-    color: var(--purple);
+    color: var(--seaGreen);
   }
   
   .box:hover {
@@ -50,15 +50,15 @@
   button {
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: var(--purple);
+    background-color: var(--seaGreen);
     color: white;
-    border-color: var(--purple);
+    border-color: var(--seaGreen);
     font-size: 18px;
     transition: 200ms transform;
   }
   
   button:hover {
     cursor: pointer;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
   }
   
