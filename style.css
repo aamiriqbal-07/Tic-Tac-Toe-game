@@ -1,0 +1,11 @@
+:root {
+    --seaGreen:  #15c5b6;
+}
+
+body {
+
+    margin:0;
+    padding:0;
+    color: var(--seaGreen);
+    font-family: sans-serif;
+}
